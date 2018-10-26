@@ -66,7 +66,7 @@ The website is hosted here https://damagedetector.azurewebsites.net/
   ### Damage Road detection
   damageRoadDetector.ipynb : The two road segments are compared and the difference between the roads is detected as damaged road.
   
-  #### Diff
+  #### Difference between pre and post disaster road segments
   ![diff](https://github.com/KiruthikaAdhi/safe-route-finder/blob/master/damageRoad.jpeg?raw=true)
   
   #### Overlay on the Post Disaster Image
