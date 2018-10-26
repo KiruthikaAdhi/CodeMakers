@@ -1,7 +1,7 @@
 # Safe Route Finder
-We are team Code Makers from Anna University. This is our repository for the codefundo++ hackathon. 
-We used Microsoft Azure Notebooks for our development.
-The notebooks can be found in here https://notebooks.azure.com/KiruthikaAdhi/libraries/cfdgis.
+We are team Code Makers from Anna University. This is our repository for the codefundo++ hackathon.  
+We used Microsoft Azure Notebooks for our development.  
+The notebooks can be found in here https://notebooks.azure.com/KiruthikaAdhi/libraries/cfdgis.  
 The website is hosted here https://damagedetector.azurewebsites.net/
 
 ## OBJECTIVE : 
@@ -35,13 +35,12 @@ The website is hosted here https://damagedetector.azurewebsites.net/
   2) createDataset.py : to create a trainDataset.csv file from input images and target maps  
   The features consists of pixels of input image and label consists of 1 or 0 indicating whether the pixel belongs to road or not. This can be calculated from the target map as follows:  
   
-  `If the corressponding pixel for the input satellite image pixel in the target map value is (255,255,255)  
-   then 
-      it belong to road     
-   else 
-      it is not a road
-    `
-  
+  `If the corressponding pixel for the input satellite image pixel in the target map value is (255,255,255)`  
+   `then` 
+      `it belong to road`     
+   `else` 
+      `it does not belong to a road`
+      
   ### Training
   The Deep Neural Network DNNClassifier from tensorflow is used for performing the binary classification. The model's accuracy is 82.5%.
   1) train.ipynb : Trains the Deep Neural Network.
