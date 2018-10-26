@@ -1,0 +1,57 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>
+	Damage Road Detector
+	</title>
+	<style>
+	img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+	height:500px;
+	}
+	</style>
+<head>
+<body>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Road Damage Detection</h1> 
+    <p>Extent of road damage caused due to Hurricane harvey in Channelview, Texas</p> 
+  </div>
+  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+  <button type="button" class="btn btn-primary" onclick="setImage('predisaster')">Pre-Disaster</button>
+  <button type="button" class="btn btn-danger" onclick="setImage('postdisaster')">Post-Disaster</button>
+  <button type="button" class="btn btn-warning" onclick="setImage('damagedRoad')">Damaged Road</button>
+
+	<img src="https://github.com/KiruthikaAdhi/safe-route-finder/blob/master/overlayDamagedRoad.jpeg?raw=true" class="img-responsive" alt="Cinque Terre" id="satImg">
+  
+  
+  </div>
+  
+  <script>
+	function setImage(category) {
+		if(category == 'predisaster'){
+			document.getElementById("satImg").src = "https://github.com/KiruthikaAdhi/safe-route-finder/blob/master/preDisaster/channelviewPre.jpg?raw=true";
+		}
+		if(category == 'postdisaster'){
+			document.getElementById("satImg").src = "https://github.com/KiruthikaAdhi/safe-route-finder/blob/master/postDisaster/channelview.jpg?raw=true";
+		}
+		if(category == 'damagedRoad'){			
+			document.getElementById("satImg").src = "https://github.com/KiruthikaAdhi/safe-route-finder/blob/master/overlayDamagedRoad.jpeg?raw=true";
+		}
+	}
+  
+  </script>
+  
+  
+</div>
+
+
+</body>
