@@ -8,8 +8,8 @@ The website is hosted here https://damagedetector.azurewebsites.net/
    Our objective for the hackathon is **Automatic Detection of Road segments damaged due to disaster from Pre and Post disaster satellite images**.
 
 ## DISASTER MANAGEMENT, RELIEF AND RECOVERY WITH OUR APPLICATION :
-  Our application plays an important role in disaster management, relief and recovery. It can be used for the following 
-  purposes :
+  Our application plays an important role in disaster management, relief and recovery.  
+  It can be used for the following purposes :
   1) It can be used by Motorists to find damage road and take a safe route which is not damaged, thus it saves lives of the motorists.
   2) It can be used by Emergency responders to efficiently operate their disaster relief operations by avoiding the damaged roads and reach people in need quickly.
   3) It can be used by Government Officials to reconstruct and repair damaged roads thus helping in disaster recovery.
