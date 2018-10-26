@@ -1,8 +1,62 @@
 # Safe Route Finder
 We are team Code Makers from Anna University. This is our repository for the codefundo++ hackathon.
 
-The idea we propose for the hackathon is **"Automatic detection of damaged roads after a disaster and suggest an alternative safe route for 
-the users"**. The users can be civilians, emergency responders or aid workers.
+## OBJECTIVE : 
+   Our objective for the hackathon is **Automatic Detection of Damaged roads due to a disaster from Pre and Post disaster satellite images**.
 
-1. We will be building an deep learning solution which compares the pre and post disaster satellite images to detect the damaged roads.
-2. We will use this detected data and use Google Maps or OpenStreetMap API to suggest an alternative safe route which does not include the detected damaged road. 
+## DISASTER MANAGEMENT, RELIEF AND RECOVERY WITH OUR APPLICATION :
+  Our application plays an important role in disaster management, relief and recovery. It can be used for the following purposes :
+  1) It can be used by Motorists to find damage road and take a safe route which is not damaged thus saving lives.
+  2) It can be used by Emergency responders to efficiently operate their disaster relief operations by avoiding the damaged roads and reach people in need quickly.
+  3) It can be used by Government Officials to reconstruct and repair damaged roads thus helping in disaster recovery.
+  
+## IMPLEMENTATION : 
+   The solution we propose is feasible and efficient in the following ways : 
+   1) The application depends only on satellite images which is readily available during disasters.
+   2) The detection can be updated in real time using the post disaster images taken over time
+   
+   The detection is composed of the following four phases  
+   1) Data Collection  
+   2) Training an Deep Neural Network for Road Segmentation
+   3) Generating Road Segements from Pre and Post Disaster Satellite Images
+   4) Find the difference between the pre and post disaster road segments to detect damaged Road
+   
+
+### Data Collection   
+  The dataset which we have used is the Massachusetts Roads Dataset https://www.cs.toronto.edu/~vmnih/data/.  
+  It consists of input images and target Maps
+  1) Input Images : It consists of high resolution satellite images
+  2) Target Maps : The corresponding maps for the target images
+  The following files are used for data collection :
+  1) download.py : to scrap the data from the https://www.cs.toronto.edu/~vmnih/data/ url
+  2) createDataset.py : to create a trainDataset.csv file from input images and target maps  
+  The features consists of pixels of input image and label consists of 1 or 0 indicating whether the pixel belongs to road or not. This can be calculated from the target map.
+  If the corressponding pixel in the target map value is (255,255,255) then it belong to road otherwise it is not a road.
+  
+  ### Training
+  The Deep Neural Network DNNClassifier from tensorflow is used for performing the binary classification. The model's accuracy is 82.5%.
+  1) train.ipynb : Trains the Deep Neural Network.
+  2) Model : The model is saved in the 'model' folder.
+  
+  ### Road Segmentation
+  The model is used for segmenting roads from pre and post disaster satellite images
+  #### Pre Disaster
+  
+  
+  #### Post Disaster
+  
+  
+  
+  ### Damage Road detection
+  damageRoadDetector.ipynb : The two road segments are compared and the difference between the roads is detected as damaged road.
+  
+  #### Diff
+  
+  
+  #### Overlayed on the Image
+  
+  
+  
+  
+  
+    
