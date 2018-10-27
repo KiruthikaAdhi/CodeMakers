@@ -48,6 +48,7 @@ The website is hosted here https://damagedetector.azurewebsites.net/
   2) Model : The model is saved in the 'model' folder.
   
   ### Road Segmentation
+  The pre and post disaster satellite images were taken from Digital Globe Open Data program.
   classify.ipynb : It takes in the trained model and segments the roads from pre and post disaster satellite images
   #### Pre Disaster
   ##### Satellite Image
